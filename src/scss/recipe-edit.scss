@@ -1,0 +1,74 @@
+@use './util/' as *;
+
+.recipe-edit {
+    padding: 3rem;
+    padding-top: 1rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50%;
+    max-height: 100%;
+    overflow-y: auto;
+
+    &__remove-button-container {
+        text-align: end;
+    }
+
+    &__remove-button{
+        padding: 0;
+        background: none;
+        outline: none;
+        border: none;
+        font-size: 3.5rem;
+    }
+
+    &__details-grid{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        row-gap: 1rem;
+        column-gap: 4rem;
+
+        @include breakpoint-down(medium){
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__label{
+        font-weight: bold;
+    }
+
+    &__input{
+        border: .2rem solid black;
+        border-radius: .5rem;
+        font-size: inherit;
+        padding: .5rem 1rem;
+        outline: none;
+        width: 100%;
+    }
+
+    &__ingredient-grid{
+        margin-top: 2rem;
+        margin-left: 4rem;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 1rem;
+
+        @include breakpoint-down(medium){
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__add-ingredient-btn-container{
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+}
+
+textarea{
+    &.recipe-edit__input{
+        resize: none;
+        height: 20rem;
+    }
+}
+

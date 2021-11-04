@@ -1,0 +1,41 @@
+.recipe{
+    padding: 2rem;
+    padding-bottom: 4rem;
+    &:not(:last-child){
+        border-bottom:1px solid black ;
+    }
+
+&__header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 3rem;
+}
+
+&__title{
+margin: 0;
+font-size: 3.5rem;
+}
+
+&__row{
+    margin-top: 1rem;
+}
+
+&__label{
+    margin-right: .5rem;
+}
+
+&__value{
+    font-weight: 300;
+}
+
+&__value--indented{
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+&__instructions{
+    white-space: pre-wrap;
+}
+}
+

@@ -1,0 +1,28 @@
+.btn{
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: inherit;
+    border-radius: .5rem;
+    padding: .5rem 2rem;
+    cursor: pointer;
+}
+
+.btn--primary{
+color: white;
+background-color: hsl(200, 100%, 50%);
+transition: background-color 300ms ease-in-out;
+&:hover{
+    background-color: hsl(200, 100%, 35%);
+}
+}
+
+.btn--danger{
+    color: white;
+    background-color: hsl(0, 100%, 50%);
+    transition: background-color 300ms ease-in-out;
+    &:hover{
+        background-color: hsl(0, 100%, 35%);
+    }
+    }
